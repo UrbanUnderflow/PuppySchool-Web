@@ -1,25 +1,35 @@
 import React from 'react';
 const Home = () => (
-  <div className="h-screen overflow-hidden relative flex flex-col" style={{backgroundColor: '#192126'}}>
-    <div className="relative z-20 h-screen flex items-center justify-center bg-black bg-opacity-50">
-      <div className="bg-white bg-opacity-50 p-10 rounded shadow-lg w-1/3 space-y-6 text-left ml-20" style={{color: '#E0FE10'}}>
-        <h1 className="text-4xl font-bold">QuickLifts - Your Personal Gym Guide</h1>
-        <p className="text-lg">
-          Welcome to QuickLifts, the ultimate guide for your gym workouts. Powered by AI, our app provides personalized workout plans to help you reach your fitness goals in 40 minutes. Start your fitness journey with us and make every minute count.
-          <br />
-          Available now on the App Store and Play Store!
-        </p>
-        <a href="mailto:quickliftsapp@gmail.com">
-          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold my-8 py-2 px-4 rounded">Contact us</button>
-        </a>
+  <div className="h-screen overflow-hidden relative flex flex-col" 
+       style={{background: 'url(/background.png) no-repeat center center fixed', backgroundSize: 'cover'}}>
+      <div className="flex justify-between">
+        <div className="text-white font-bold">Puppy School</div>
+        <div>Contact Us</div>
       </div>
+
+
+<div className="flex">
+  <div className="pl-48 text-white text-6xl">
+    Pawsibly <br />The Best<br />Training <br />For Your Pup
+    <div className="mt-10">
+    <button className="px-8 py-2 w-32 h-8 bg-purple-600 text-white font-bold rounded">Download</button>
     </div>
+  </div>
+  <div className="">
+    <img src="/phone.png" alt="Phone" className="w-[1048px] h-auto" />
+  </div>
+</div>
+
+
+
+
+     
     <footer className="absolute bottom-0 z-20 w-full h-20 bg-black bg-opacity-50 flex items-center justify-center">
       <div className="text-white text-center space-y-2">
         <p>© {new Date().getFullYear()} QuickLifts. All rights reserved.</p>
         <div className="flex justify-center space-x-4">
           <a href="/terms" className="text-blue-400 hover:text-blue-600">Terms of Use</a>
-          <a href="/privacyPolicy" className="text-blue-400 hover:text-blue-600">Privacy Policy</a>
+          <a href="/privacy" className="text-blue-400 hover:text-blue-600">Privacy Policy</a>
         </div>
       </div>
     </footer>
