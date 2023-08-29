@@ -14,7 +14,7 @@ const Home = () => (
 
 
     <div className="flex flex-col sm:flex-row p-6 sm:p-20">
-      <div className="sm:pl-48 pt-10 text-white text-4xl sm:text-6xl">
+      <div className="sm:pl-48 pt-10 font-bold text-white text-4xl sm:text-6xl">
         Pawsibly <br />The Best<br />Training <br />For Your Pup
         <div className="mt-10">
           <button className="px-8 py-2 h-12 text-sm bg-purple-600 text-white font-bold rounded">
@@ -23,8 +23,8 @@ const Home = () => (
         </div>
       </div>
       <div className="mt-10 sm:mt-0">
-        <img src="/phoneMobile.png" alt="Phone Mobile" className="w-full sm:hidden h-auto" />
-        <img src="/phone.png" alt="Phone" className="hidden sm:block w-full sm:w-[1048px] h-auto" />
+        <img src="/phoneMobile.png" alt="Phone Mobile" className="w-full md:hidden h-auto" />
+        <img src="/phone.png" alt="Phone" className="hidden md:block w-full md:w-[1048px] h-auto" />
       </div>
     </div>
 
@@ -40,8 +40,5 @@ const Home = () => (
     </footer>
   </div>
 );
-
-
-
 
 export default Home;
